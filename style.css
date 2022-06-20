@@ -1,0 +1,90 @@
+body {
+  background: #000;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.box {
+  margin: 0 auto;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: bold;
+}
+
+.box h2 {
+  margin: 0;
+  color: white;
+  font-size: 72px;
+}
+
+.box h5 {
+  margin: 0;
+  color: white;
+  font-size: 35px;
+  text-align: right;
+}
+
+.welcome-text{
+  margin-top: 150px;
+  color: white;
+  text-align: center;
+}
+
+.textMask {
+  display: inline-block;
+  margin: 0;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: url('./2mask.jpg');
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: bgAnim 5s alternate infinite ease-in-out;
+          animation: bgAnim 5s alternate infinite ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+}
+
+@-webkit-keyframes bgAnim {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+@keyframes bgAnim {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 100% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+      height: auto;
+  }
+  .box h2 {
+      font-size: 80px;
+  }
+  .textMask {
+      font-size: 60px;
+  }
+}
